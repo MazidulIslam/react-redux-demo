@@ -1,14 +1,21 @@
-import logo from "./logo.svg";
 import "./App.css";
 import CakeContainer from "./components/CakeContainer";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import HooksCakeContainer from "./components/HooksCakeContainer";
+import IceCreamContainer from "./components/IceCreamContainer";
+import ChocolateContainer from "./components/ChocolateContainer";
+import HooksChocolateContainer from "./components/HooksChocolateContainer";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
         <CakeContainer />
+        <HooksCakeContainer />
+        <IceCreamContainer />
+        <ChocolateContainer />
+        <HooksChocolateContainer />
       </div>
     </Provider>
   );
